@@ -6,6 +6,9 @@ body {
   border-bottom: #068537 3px solid;
   opacity: 0.8;
 }
+.navbar-toggler {
+  display: block !important;
+}
 .nav-link {
   color: #555 !important;
   font-weight: 500;
