@@ -29,3 +29,7 @@ body {
   min-height: 700px;
   background: rgba(0, 0, 0, 0.7);
 }
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}

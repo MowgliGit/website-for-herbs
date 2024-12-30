@@ -242,7 +242,7 @@
             great combinations that work well too.
           </p>
           <p class="lead mx-auto">Some traditional combinations are:</p>
-          <div class="d-flex">
+          <div class="row">
             <div class="col-md-4 py-4">
               <ul>
                 <li>basil - with chives, chilli, garlic, oregano;</li>
@@ -281,8 +281,8 @@
       <div class="container">
         <div class="row">
           <div class="col text-center py-4">
-            <h4 class="text-upercase">Herbs</h4>
-            <p>Copyright &copy; 2022</p>
+            <h4 class="text-uppercase">Herbs</h4>
+            <p>Copyright &copy; <span id="year"></span></p>
             <a href="#" class="btn btn-success btn-lg">Contact Us</a>
           </div>
         </div>
@@ -304,22 +304,25 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
 
-      // scroolspy
+      // Scrollspy (Bootstrap feature)
       $("body").scrollspy({ target: "#main-nav" });
-      // smooth scroling
+
+      // Smooth scrolling
       $("#main-nav a").on("click", function (event) {
         if (this.hash !== "") {
-          even.preventDefault();
-          const hash = this.hush;
+          event.preventDefault(); // Fixed typo from "even" to "event"
+          const hash = this.hash; // Fixed typo from "hush" to "hash"
           $("html, body").animate(
             {
               scrollTop: $(hash).offset().top,
             },
+            800, // Added animation duration
             function () {
               window.location.hash = hash;
             }
