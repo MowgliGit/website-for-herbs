@@ -1,6 +1,9 @@
 body {
   background: #333;
   color: #fff;
+  font-size: 18px;
+  max-width: 1550px;
+  margin: 0 auto;
 }
 .navbar {
   border-bottom: #068537 3px solid;
@@ -12,7 +15,7 @@ body {
 .nav-link {
   color: #555 !important;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
 }
 #home-section .home-inner {
   padding-top: 150px;
