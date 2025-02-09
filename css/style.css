@@ -8,6 +8,8 @@ body {
 .navbar {
   border-bottom: #068537 3px solid;
   opacity: 0.8;
+  max-width: 1550px;
+  margin: 0 auto;
 }
 .navbar-toggler {
   display: block !important;
@@ -21,6 +23,8 @@ body {
   padding-top: 150px;
 }
 #home-section {
+  max-width: 1550px;
+  margin: 0 auto;
   background: url(../img/herb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,14 +32,16 @@ body {
   min-height: 700px;
 }
 #home-section .dark-overlay {
+  max-width: 1550px;
+  margin: 0 auto;
   position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
   min-height: 700px;
   background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 .container {
-  max-width: 90vw;
+  max-width: 120rem;
   margin: 0 auto;
 }
