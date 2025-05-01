@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   max-width: 1550px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .navbar {
   border-bottom: #068537 3px solid;
